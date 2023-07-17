@@ -851,43 +851,6 @@
             <param name="handler">The handler for processing a message.</param>
             <returns>The response for the ChangeSet.</returns>
         </member>
-        <member name="T:Microsoft.AspNetCore.OData.Common.AsyncEnumerable`1">
-            <summary>
-            This class wraps an IEnumerable as an IAsyncEnumerable.
-            </summary>
-            <typeparam name="T">The type of the elements in the enumerable.</typeparam>
-        </member>
-        <member name="M:Microsoft.AspNetCore.OData.Common.AsyncEnumerable`1.#ctor(System.Collections.IEnumerable)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.AspNetCore.OData.Common.AsyncEnumerable`1"/> class with the specified enumerable to wrap.
-            </summary>
-            <param name="enumerable">The enumerable to wrap.</param>
-        </member>
-        <member name="M:Microsoft.AspNetCore.OData.Common.AsyncEnumerable`1.GetAsyncEnumerator(System.Threading.CancellationToken)">
-            <inheritdoc/>
-        </member>
-        <member name="T:Microsoft.AspNetCore.OData.Common.AsyncEnumerator`1">
-            <summary>
-            Represents an asynchronous enumerator that can iterate over a collection of elements of type <typeparamref name="T"/>.
-            This enumerator implements the <see cref="T:System.Collections.Generic.IAsyncEnumerator`1"/> interface, allowing asynchronous enumeration of a collection.
-            </summary>
-            <typeparam name="T">The type of the elements in the collection being enumerated.</typeparam>
-        </member>
-        <member name="M:Microsoft.AspNetCore.OData.Common.AsyncEnumerator`1.#ctor(System.Collections.IEnumerator)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.AspNetCore.OData.Common.AsyncEnumerator`1"/> class with the specified enumerator to wrap.
-            </summary>
-            <param name="enumerator">The enumerator to wrap.</param>
-        </member>
-        <member name="P:Microsoft.AspNetCore.OData.Common.AsyncEnumerator`1.Current">
-            <inheritdoc/>
-        </member>
-        <member name="M:Microsoft.AspNetCore.OData.Common.AsyncEnumerator`1.MoveNextAsync">
-            <inheritdoc/>
-        </member>
-        <member name="M:Microsoft.AspNetCore.OData.Common.AsyncEnumerator`1.DisposeAsync">
-            <inheritdoc/>
-        </member>
         <member name="T:Microsoft.AspNetCore.OData.Common.CollectionExtensions">
             <summary>
             Helper extension methods for fast use of collections.
