@@ -12,20 +12,9 @@ namespace ODataPerformanceProfile.Controllers
 
         public ProductsController(ProductsContext context)
         {
-            /* _context = context;
-
-             if (_context.Products.Count() == 0)
-             {
-
-
-                 foreach (var product in products)
-                 {
-                     _context.Products.Add(product);
-                 }
-
-                 _context.SaveChanges();
-             }*/
+            _context = context;
             products = new List<Product>();
+
             for (int i = 1; i < 3000; i++)
             {
                 var prod = new Product()
